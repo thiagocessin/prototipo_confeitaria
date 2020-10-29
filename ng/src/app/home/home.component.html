@@ -4,13 +4,15 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav role="navigation">
     <!--this is a place for us to add side-nav code-->
+    <a *ngFor="let item of menuItems" mat-list-item [routerLink]="'/'+item"> {{item}} </a>
+    
   </mat-sidenav>
   <mat-sidenav-content>
 
     <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
     <!--in here all the content must reside. We will add a navigation header as well-->
-    <main>
-    
+      <main>
+        <app-conteudo-home></app-conteudo-home>
      </main>
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -18,6 +18,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { HeaderComponent } from './navigation/header/header.component';
 
 import {MatIconModule} from '@angular/material/icon';
+import { ConteudoHomeComponent } from './conteudo-home/conteudo-home.component';
+
+import {MatCardModule} from '@angular/material/card';
+
+import { ChartsModule } from 'ng2-charts';
 
 
 
@@ -25,7 +30,8 @@ import {MatIconModule} from '@angular/material/icon';
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    ConteudoHomeComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +42,10 @@ import {MatIconModule} from '@angular/material/icon';
     MatMenuModule,
     MatButtonModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule,
+    ChartsModule
+    
   ],
   exports:[
     MatSidenavModule,
@@ -44,7 +53,9 @@ import {MatIconModule} from '@angular/material/icon';
     MatMenuModule,
     MatButtonModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
